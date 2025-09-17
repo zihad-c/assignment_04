@@ -1,3 +1,4 @@
+// Problem-01 : Train TT's Fine Calculator 
 function totalFine(fare) {
     // You have to write your code here
     if (typeof fare !== "number" || fare <= 0) {
@@ -11,7 +12,7 @@ function totalFine(fare) {
     return fine;
 }
 
-
+// Problem-02 : Clean & Capitalize Characters
 function onlyCharacter(str) {
     // You have to write your code here}
     if (typeof str !== "string") {
@@ -24,7 +25,7 @@ function onlyCharacter(str) {
     return final;
 }
 
-
+// Problem-03 : FIFA Best Team Award
 function bestTeam(player1, player2) {
     // You have to write your code here
     let team1 = player1.foul + player1.cardY + player1.cardR;
@@ -49,7 +50,7 @@ function bestTeam(player1, player2) {
     return "Invalid";
 }
 
-
+// Problem-04 : Same Same But Different
 function isSame(arr1, arr2) {
     // You have to write your code here
 
@@ -67,11 +68,15 @@ function isSame(arr1, arr2) {
     return true;
 }
 
-
+// Problem-05: Exam Result Report Generator
 function resultReport(marks) {
     // You have to write your code here
     if (!Array.isArray(marks)) {
+        // console.log("Invalid")
         return "Invalid"
+    }
+    if (marks.length === 0) {
+        return { finalScore: 0, pass: 0, fail: 0 };
     }
     let total = 0;
     let pass = 0;

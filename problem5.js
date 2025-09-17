@@ -5,6 +5,9 @@ function resultReport(marks) {
         // console.log("Invalid")
         return "Invalid"
     }
+    if (marks.length === 0) {
+        return { finalScore: 0, pass: 0, fail: 0 };
+    }
     let total = 0;
     let pass = 0;
     let fail = 0;
